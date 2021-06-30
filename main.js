@@ -70,7 +70,7 @@ function gotMessage(msg) {
     if (message.includes('khankir pola khushi thak ja paisos ota niya') && msg.author != '858413343089492009') {
         msg.channel.send(msg.content);
     }
-    if (message.includes('ay megaeonise') && msg.author != '858413343089492009') {
+    if (message.includes('ay') && message.includes('megaeonise') && msg.author != '858413343089492009') {
         msg.channel.send(msg.content);
     }
 }
