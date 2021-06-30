@@ -71,7 +71,7 @@ function gotMessage(msg) {
         msg.channel.send(msg.content);
     }
     if (message.includes('ay') && message.includes('megaeonise') && msg.author != '858413343089492009') {
-        msg.channel.send(msg.content);
+        msg.channel.send('ay megaeonise');
     }
 }
 
