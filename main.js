@@ -2,9 +2,10 @@ console.log("hi guys welcome to my lets play")
 
 require('dotenv').config();
 
+token = System.getenv('BOTTOKEN')
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login(process.env.BOTTOKEN);
+client.login(process.env.token);
 
 client.on('ready', readyDiscord);
 function readyDiscord() {
