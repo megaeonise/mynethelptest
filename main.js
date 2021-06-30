@@ -41,7 +41,7 @@ function gotMessage(msg) {
     const index = Math.floor(Math.random() * eightball.length);
     let message = msg.content.toLowerCase()
         if (msg.content === 't!help') {
-        msg.reply('Functions = t!8ball, t!ping');
+        msg.reply('Functions = 8ball, t!ping');
     }
     if (msg.content === 'test') {
         msg.reply('dont worry, your net is working...');
@@ -52,7 +52,7 @@ function gotMessage(msg) {
     if (msg.content === 'shame') {
         msg.channel.send('no shaming nothing doing im not doing anyhting im sleeping');
     }
-    if (message.includes('t!8ball')) {
+    if (message.includes('8ball')) {
         msg.reply(eightball[index]);
         }
     if (msg.content === '!DEBUGMESSAGE1') {
@@ -69,6 +69,9 @@ function gotMessage(msg) {
     }
     if (msg.content === 'khankir pola khushi thak ja paisos ota niya') {
         msg.channel.send('KHANKIR POLA KHUSHI THAK JA PAISOS OTA NIYA');
+    }
+    if (msg.content === 'ay megaeonise' && msg.author != '858413343089492009') {
+        msg.channel.send('AY MEGAEONISE');
     }
 }
 
