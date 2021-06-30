@@ -72,7 +72,7 @@ function gotMessage(msg) {
     if (message.includes('full on') && msg.author != '858413343089492009') {
         msg.channel.send('ayy half some');
     }
-    if (message.includes === 'ennada shaniyane onnu vecchena eppudi irkum teriyamo' && msg.author != '858413343089492009') {
+    if (message.includes('ennada shaniyane onnu vecchena eppudi irkum teriyamo') && msg.author != '858413343089492009') {
         msg.channel.send(msg.content);
     }
     if (message.includes('khankir pola khushi thak ja paisos ota niya') && msg.author != '858413343089492009') {
