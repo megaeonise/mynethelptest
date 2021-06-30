@@ -43,13 +43,13 @@ function gotMessage(msg) {
         if (msg.content === 't!help') {
         msg.reply('Functions = 8ball, t!ping');
     }
-    if (msg.content === 'test') {
+    if (message === 'test') {
         msg.reply('dont worry, your net is working...');
     }
-        if (msg.content === 'some') {
+    if (message === 'some') {
         msg.channel.send('OHHHHHHH SOME REFERENCE');
     }
-    if (msg.content === 'shame') {
+    if (message === 'shame') {
         msg.channel.send('no shaming nothing doing im not doing anyhting im sleeping');
     }
     if (message.includes('8ball')) {
@@ -58,20 +58,20 @@ function gotMessage(msg) {
     if (msg.content === '!DEBUGMESSAGE1') {
         msg.channel.send(message);
     }
-    if (msg.content === 't!ping') {
+    if (message === 't!ping') {
         msg.channel.send('pong');
     }
-    if (msg.content === 'full on') {
+    if (message === 'full on') {
         msg.channel.send('ayy half some');
     }
-    if (msg.content === 'ennada shaniyane onnu vecchena eppudi irkum teriyamo') {
-        msg.channel.send('ENNADA SHANIYANE ONNU VECCHENA EPPUDI IRKUM TERIYAMO');
+    if (message === 'ennada shaniyane onnu vecchena eppudi irkum teriyamo' && msg.author != '858413343089492009') {
+        msg.channel.send(msg.content);
     }
-    if (msg.content === 'khankir pola khushi thak ja paisos ota niya') {
-        msg.channel.send('KHANKIR POLA KHUSHI THAK JA PAISOS OTA NIYA');
+    if (message === 'khankir pola khushi thak ja paisos ota niya' && msg.author != '858413343089492009') {
+        msg.channel.send(msg.content);
     }
-    if (msg.content === 'ay megaeonise' && msg.author != '858413343089492009') {
-        msg.channel.send('ay megaeonise');
+    if (message === 'ay megaeonise' && msg.author != '858413343089492009') {
+        msg.channel.send(msg.content);
     }
 }
 
