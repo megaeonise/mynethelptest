@@ -82,7 +82,7 @@ function gotMessage(msg) {
         msg.channel.send('ay megaeonise');
     }
     if (message.includes('fat') && msg.author != '858413343089492009') {
-        msg.reply(fatwords[index1]);
-        }
+        msg.channel.send(fatwords[index1]);
+    }
 }
 
