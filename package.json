@@ -1,0 +1,15 @@
+{
+  "name": "kdkdk",
+  "version": "1.0.0",
+  "description": "megaeonise bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "helptest"
+  },
+  "author": "megaeonise",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
