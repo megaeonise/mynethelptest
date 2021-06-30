@@ -71,7 +71,7 @@ function gotMessage(msg) {
         msg.channel.send('KHANKIR POLA KHUSHI THAK JA PAISOS OTA NIYA');
     }
     if (msg.content === 'ay megaeonise' && msg.author != '858413343089492009') {
-        msg.channel.send('AY MEGAEONISE');
+        msg.channel.send('ay megaeonise');
     }
 }
 
