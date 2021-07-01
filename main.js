@@ -93,6 +93,9 @@ function gotMessage(msg) {
     if ((message.includes('are you ready') || message.includes('ok im coming')) && msg.author != '858413343089492009') {
         msg.channel.send('Ok im coming, infect me');
     }
+    if (message.includes('which one') && msg.author != '858413343089492009') {
+        msg.channel.send('hey which one are you');
+    }
 }
 
 
