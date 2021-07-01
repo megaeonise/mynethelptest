@@ -84,5 +84,8 @@ function gotMessage(msg) {
     if (message.includes('fat') && msg.author != '858413343089492009') {
         msg.channel.send(fatwords[index1]);
     }
+    if (message.includes('too many') && msg.author != '858413343089492009') {
+        msg.channel.send(The Big Gete Star allowed me to cheat death, how could this be? );
+    }
 }
 
