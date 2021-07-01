@@ -93,7 +93,7 @@ function gotMessage(msg) {
     if ((message.includes('are you ready') || message.includes('ok im coming')) && msg.author != '858413343089492009') {
         msg.channel.send('https://cdn.discordapp.com/attachments/713289795962535957/860181227860656158/Screenshot_2019-12-19-14-36-53-1.png');
     }
-    if (message.includes('which one') && msg.author != '858413343089492009') {
+    if (message.includes('which') && message.includes('are') && message.includes('you') && msg.author != '858413343089492009') {
         msg.channel.send('hey which one are you');
     }
 }
