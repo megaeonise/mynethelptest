@@ -90,7 +90,7 @@ function gotMessage(msg) {
     if ((message.includes('brb') || message.includes('come in a bit') || message.includes('back in a bit')) && msg.author != '858413343089492009') {
         msg.channel.send('Who are you right now');
     }
-    if (message.includes('are you ready') && msg.author != '858413343089492009') {
+    if ((message.includes('are you ready') || message.includes('ok im coming')) && msg.author != '858413343089492009') {
         msg.channel.send('Ok im coming, infect me');
     }
 }
