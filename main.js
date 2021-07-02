@@ -54,7 +54,7 @@ function gotMessage(msg) {
     if (message.includes('test')) {
         msg.reply('dont worry, your net is working...');
     }
-    if (message.includes('some') && msg.author != '858413343089492009') {
+    if ((message.includes('some') || (msg.content === '860572139005935646')) && msg.author != '858413343089492009') {
         msg.channel.send('OHHHHHHH SOME REFERENCE');
     }
     if (message.includes('shame') && msg.author != '858413343089492009') {
@@ -95,6 +95,9 @@ function gotMessage(msg) {
     }
     if (message.includes('which') && message.includes('are') && message.includes('you') && msg.author != '858413343089492009') {
         msg.channel.send('hey which one are you');
+    }
+    if ((message.content === 'deserved') && msg.author != '858413343089492009') {
+        msg.channel.send('nothingggggggggggggggggggggggggggggggg');
     }
 }
 
