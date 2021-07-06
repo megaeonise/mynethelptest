@@ -78,7 +78,7 @@ function gotMessage(msg) {
     if (message.includes('khankir pola khushi thak ja paisos ota niya') && msg.author != '858413343089492009') {
         msg.channel.send(msg.content);
     }
-    if (message.includes('ay') && message.includes('megaeonise') && msg.author != '858413343089492009') {
+    if (((message.includes('ay') && message.includes('megaeonise')) || message.includes('<@!858413343089492009>') || message.includes('<@!190756291558375424>'))  && msg.author != '858413343089492009') {
         msg.channel.send('ay megaeonise');
     }
     if (message.includes('fat') && msg.author != '858413343089492009') {
