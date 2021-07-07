@@ -48,58 +48,58 @@ function gotMessage(msg) {
     const index = Math.floor(Math.random() * eightball.length);
     const index1 = Math.floor(Math.random() * fatwords.length);
     let message = msg.content.toLowerCase()
-    if (msg.author != '858413343089492009'); {
-    if (msg.content === 't!help') {
+    if (msg.author != '858413343089492009') {
+        if (msg.content === 't!help') {
         msg.reply('Functions = 8ball, t!ping');
-    }
-    if (message.includes('test')) {
-        msg.reply('dont worry, your net is working...');
-    }
-    if ((message.includes('some') || message.includes('<@!862237537991917578>'))) {
-        msg.channel.send('OHHHHHHH SOME REFERENCE');
-    }
-    if (message.includes('shame')) {
-        msg.channel.send('no shaming nothing doing im not doing anyhting im sleeping');
-    }
-    if (message.includes('8ball')) {
-        msg.reply(eightball[index]);
         }
-    if (msg.content === '!DEBUGMESSAGE1') {
-        msg.channel.send(message);
-    }
-    if (msg.content === 't!ping') {
-        msg.channel.send('pong');
-    }
-    if (message.includes('full on')) {
-        msg.channel.send('ayy half some');
-    }
-    if (message.includes('ennada shaniyane onnu vecchena eppudi irkum teriyamo')) {
-        msg.channel.send(msg.content);
-    }
-    if (message.includes('khankir pola khushi thak ja paisos ota niya')) {
-        msg.channel.send(msg.content);
-    }
-    if (((message.includes('ay') && message.includes('megaeonise')) || message.includes('<@!858413343089492009>') || message.includes('<@!190756291558375424>'))) {
-        msg.channel.send('ay megaeonise');
-    }
-    if (message.includes('fat')) {
-        msg.channel.send(fatwords[index1]);
-    }
-    if (message.includes('too many')) {
-        msg.channel.send('The Big Gete Star allowed me to cheat death, how could this be?');
-    }
-    if ((message.includes('brb') || message.includes('come in a bit') || message.includes('back in a bit'))) {
-        msg.channel.send('Who are you right now');
-    }
-    if ((message.includes('are you ready') || message.includes('ok im coming'))) {
-        msg.channel.send('https://cdn.discordapp.com/attachments/713289795962535957/860181227860656158/Screenshot_2019-12-19-14-36-53-1.png');
-    }
-    if (message.includes('which') && message.includes('are') && message.includes('you')) {
-        msg.channel.send('hey which one are you');
-    }
-    if ((message.content === 'deserved')) {
-        msg.channel.send('nothingggggggggggggggggggggggggggggggg');
-    }
+        if (message.includes('test')) {
+        msg.reply('dont worry, your net is working...');
+        }
+        if ((message.includes('some') || message.includes('<@!862237537991917578>'))) {
+        msg.channel.send('OHHHHHHH SOME REFERENCE');
+        }
+        if (message.includes('shame')) {
+        msg.channel.send('no shaming nothing doing im not doing anyhting im sleeping');
+        }
+        if (message.includes('8ball')) {
+            msg.reply(eightball[index]);
+            }
+        if (msg.content === '!DEBUGMESSAGE1') {
+            msg.channel.send(message);
+        }
+        if (msg.content === 't!ping') {
+            msg.channel.send('pong');
+        }
+        if (message.includes('full on')) {
+            msg.channel.send('ayy half some');
+        }
+        if (message.includes('ennada shaniyane onnu vecchena eppudi irkum teriyamo')) {
+            msg.channel.send(msg.content);
+        }
+        if (message.includes('khankir pola khushi thak ja paisos ota niya')) {
+            msg.channel.send(msg.content);
+        }
+        if (((message.includes('ay') && message.includes('megaeonise')) || message.includes('<@!858413343089492009>') || message.includes('<@!190756291558375424>'))) {
+            msg.channel.send('ay megaeonise');
+        }
+        if (message.includes('fat')) {
+            msg.channel.send(fatwords[index1]);
+        }
+        if (message.includes('too many')) {
+            msg.channel.send('The Big Gete Star allowed me to cheat death, how could this be?');
+        }
+        if ((message.includes('brb') || message.includes('come in a bit') || message.includes('back in a bit'))) {
+            msg.channel.send('Who are you right now');
+        }
+        if ((message.includes('are you ready') || message.includes('ok im coming'))) {
+            msg.channel.send('https://cdn.discordapp.com/attachments/713289795962535957/860181227860656158/Screenshot_2019-12-19-14-36-53-1.png');
+        }
+        if (message.includes('which') && message.includes('are') && message.includes('you')) {
+            msg.channel.send('hey which one are you');
+        }
+        if ((message.content === 'deserved')) {
+            msg.channel.send('nothingggggggggggggggggggggggggggggggg');
+        }
 }
 }
 
