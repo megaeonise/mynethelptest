@@ -43,10 +43,18 @@ const fatwords = [
     'who rikth?',
 ]
 
+const ashfaroth = [
+    'ayy janwar jaisa bhalu',
+    'ayy bhalu jaisa janwar',
+    'ayy janwar jaisa janwar',
+    'ayy bhalu jaisa bhalu',
+]
+
 
 function gotMessage(msg) {
     const index = Math.floor(Math.random() * eightball.length);
     const index1 = Math.floor(Math.random() * fatwords.length);
+    const index2 = Math.floor(Math.random() * ashfaroth.length);
     let message = msg.content.toLowerCase()
     if (msg.author != '858413343089492009') {
         if (msg.content === 't!help') {
@@ -100,7 +108,10 @@ function gotMessage(msg) {
         if ((message.content === 'deserved')) {
             msg.channel.send('nothingggggggggggggggggggggggggggggggg');
         }
-}
+        if (message.includes('bhalu') || message.includes('janwar')) {
+            msg.channel.send(ashfaroth[index2]);
+        }
+    }
 }
 
 
