@@ -54,7 +54,7 @@ function gotMessage(msg) {
     if (message.includes('test')) {
         msg.reply('dont worry, your net is working...');
     }
-    if ((message.includes('some') || (msg.content === '<@!862233632488030208>')) && msg.author != '858413343089492009') {
+    if ((message.includes('some')) || (msg.content === '<@!862233632488030208>')) && msg.author != '858413343089492009') {
         msg.channel.send('OHHHHHHH SOME REFERENCE');
     }
     if (message.includes('shame') && msg.author != '858413343089492009') {
