@@ -79,7 +79,10 @@ function gotMessage(msg) {
             msg.channel.send('pong');
         }
         if (message.includes('full on')) {
-            msg.channel.send('ayy half some');
+            msg.channel.send('ayy half some');   
+        }
+        if (message.includes('chib')) {
+            msg.channel.send('fuck those commands');
         }
         if (message.includes('ennada shaniyane onnu vecchena eppudi irkum teriyamo')) {
             msg.channel.send(msg.content);
