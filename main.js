@@ -93,7 +93,7 @@ function gotMessage(msg) {
         if (((message.includes('ay') && message.includes('megaeonise')) || message.includes('<@!858413343089492009>') || message.includes('<@!190756291558375424>'))) {
             msg.channel.send('ay megaeonise');
         }
-        if (message.includes('fat')) {
+        if (message.content === 'fat') {
             msg.channel.send(fatwords[index1]);
         }
         if (message.includes('too many')) {
@@ -116,7 +116,5 @@ function gotMessage(msg) {
         }
     }
 }
-
-
 
 
