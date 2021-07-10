@@ -50,11 +50,17 @@ const ashfaroth = [
     'ayy bhalu jaisa bhalu',
 ]
 
+const baal = [
+    'https://cdn.discordapp.com/attachments/777823278567915522/863454029359349780/unknown.png',
+    'https://cdn.discordapp.com/attachments/799550778485506069/863455657864462346/unknown.png',
+    'https://cdn.discordapp.com/attachments/799550778485506069/863455714978037780/unknown.png',
+]
 
 function gotMessage(msg) {
     const index = Math.floor(Math.random() * eightball.length);
     const index1 = Math.floor(Math.random() * fatwords.length);
     const index2 = Math.floor(Math.random() * ashfaroth.length);
+    const index3 = Math.floor(Math.random() * baal.length);
     let message = msg.content.toLowerCase()
     if (msg.author != '858413343089492009') {
         if (msg.content === 't!help') {
@@ -115,7 +121,7 @@ function gotMessage(msg) {
             msg.channel.send(ashfaroth[index2]);
         }
         if ((message.includes('baal'))) {
-            msg.channel.send('https://cdn.discordapp.com/attachments/777823278567915522/863454029359349780/unknown.png');
+            msg.channel.send(baal[index3]);
         }
     }
 }
