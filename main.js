@@ -114,6 +114,9 @@ function gotMessage(msg) {
         if (message.includes('bhalu') || message.includes('janwar')) {
             msg.channel.send(ashfaroth[index2]);
         }
+        if ((message.includes('baal'))) {
+            msg.channel.send('https://cdn.discordapp.com/attachments/777823278567915522/863454029359349780/unknown.png');
+        }
     }
 }
 
