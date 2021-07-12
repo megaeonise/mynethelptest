@@ -128,7 +128,7 @@ function gotMessage(msg) {
         }
         if (message.content('!!exit') && msg.author(canshutdown)) {
             msg.reply('Shutting down...')
-            exit();
+            fail;
         }
         if (message.content('!!exit')) {
             msg.reply('Ask megaeonise');
