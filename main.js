@@ -126,12 +126,15 @@ function gotMessage(msg) {
         if ((message.includes('baal'))) {
             msg.channel.send('https://cdn.discordapp.com/attachments/777823278567915522/863454029359349780/unknown.png');
         }
-        if (message.content('!!exit') && msg.author(canshutdown)) {
+        if (message.content('!!exit') && msg.author('190756291558375424')) {
             msg.reply('Shutting down...')
-            fail;
+            throw "Shut down";
         }
         if (message.content('!!exit')) {
             msg.reply('Ask megaeonise');
+        }
+        if (message.content('!DEBUGMESSAGE3')) {
+            msg.channel.send('!!exit');
         }
     }
 }
