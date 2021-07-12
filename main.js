@@ -129,8 +129,8 @@ function gotMessage(msg) {
         if (msg.content === 't!exit') {
             msg.reply('Ask megaeonise');
         }
-        if (msg.content === 't!exit' && msg.author('190756291558375424')) {
-            dirtywaytoshutdownbot
+        if (msg.content === 't!exit' && msg.author === '190756291558375424') {
+            msg.channel.send('turning off')
             throw "Shut down";
         }
     }
