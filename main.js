@@ -1,5 +1,7 @@
+///Archaic code from when before I hosted it on Heroku
 console.log("hi guys welcome to my lets play")
 
+///Environmental Variable and dependancies
 require('dotenv').config();
 
 const Discord = require('discord.js');
@@ -11,8 +13,10 @@ function readyDiscord() {
     console.log('AGLA \n sAGLA \n PAGla')
 }
 
+///Get message
 client.on('message', gotMessage);
 
+///Arrays storing strings
 const eightball = [
     'It is certain',
     'It is decidedly so',
@@ -52,7 +56,7 @@ const ashfaroth = [
 
 const canshutdown = ['190756291558375424']
 
-
+///The function which allows the bot to send messages
 function gotMessage(msg) {
     const index = Math.floor(Math.random() * eightball.length);
     const index1 = Math.floor(Math.random() * fatwords.length);
@@ -122,9 +126,12 @@ function gotMessage(msg) {
         if ((message.includes('baal'))) {
             msg.channel.send('https://cdn.discordapp.com/attachments/777823278567915522/863454029359349780/unknown.png');
         }
-        if (message.includes('!!exit') && msg.author('' in canshutdown)) {
+        if (message.content('!!exit') && msg.author(canshutdown)) {
             msg.reply('Shutting down...')
             exit();
+        }
+        if (message.content('!!exit')) {
+            msg.reply('Ask megaeonise');
         }
     }
 }
