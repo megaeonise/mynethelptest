@@ -123,6 +123,7 @@ function gotMessage(msg) {
             msg.channel.send('https://cdn.discordapp.com/attachments/777823278567915522/863454029359349780/unknown.png');
         }
         if (message.includes('!!exit') && msg.author('' in canshutdown)) {
+            msg.reply('Shutting down...')
             exit();
         }
     }
