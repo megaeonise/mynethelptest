@@ -62,7 +62,7 @@ function gotMessage(msg) {
     const index1 = Math.floor(Math.random() * fatwords.length);
     const index2 = Math.floor(Math.random() * ashfaroth.length);
     let message = msg.content.toLowerCase()
-    if (msg.author != '858413343089492009') {
+    if (msg.author != '858413343089492009' || msg.author != '593359969806712861') {
         if (msg.content === 't!help') {
         msg.reply('Functions = 8ball, t!ping');
         }
