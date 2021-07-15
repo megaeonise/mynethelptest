@@ -131,7 +131,7 @@ function gotMessage(msg) {
         }
         if (msg.content === 't!exit' && msg.author == '190756291558375424') {
             msg.channel.send('turning off')
-            throw "Shut down";
+            process.exit(1);
         }
     }
 }
