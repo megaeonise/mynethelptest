@@ -69,9 +69,6 @@ function gotMessage(msg) {
         if (message.includes('test')) {
         msg.reply('dont worry, your net is working...');
         }
-        if ((message.includes('some') || message.includes('<@!862237537991917578>'))) {
-        msg.channel.send('OHHHHHHH SOME REFERENCE');
-        }
         if (message.includes('shame')) {
         msg.channel.send('no shaming nothing doing im not doing anyhting im sleeping');
         }
