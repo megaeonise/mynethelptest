@@ -8,9 +8,19 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.BOTTOKEN);
 
+///Ready+rainbow
+const colors = ['#FF0000','#FF7F00','#FFFF00','#00FF00', '#0000FF', '#2E2B5F', '#8B00FF'];
+
 client.on('ready', readyDiscord);
 function readyDiscord() {
     console.log('AGLA \n sAGLA \n PAGla')
+    var random = Math.floor(Math.random() * colors.length);
+    var role = message.guild.roles.find(roleVal => roleVal.name === "dokkan");
+    setInterval(() => {
+        role.edit({
+            color: colors[random]
+        })
+    }, 5000);
 }
 
 ///Get message
