@@ -1,11 +1,15 @@
 const dokkanColors = [
-  "#FF0000",
-  "#FF7F00",
-  "#FFFF00",
-  "#00FF00",
-  "#0000FF",
-  "#2E2B5F",
-  "#8B00FF",
+  "#ffb0c9",
+  "#ef4b56",
+  "#ff8f35",
+  "#ffeba8",
+  "#bbe67d",
+  "#7eeadc",
+  "#2fa2ae",
+  "#83dbff",
+  "#5180ff",
+  "#9e47ff",
+  "#cfa6ff",
 ];
 const wotColors = ["#ededed", "#2735F5", "#5C5C5C", "#8C083E", "#01D5CA"];
 const singuColors = ["#333333"];
@@ -39,6 +43,7 @@ const ashfaroth = [
   "ayy janwar jaisa janwar",
   "ayy bhalu jaisa bhalu",
 ];
+
 module.exports = {
   dokkanColors,
   wotColors,
