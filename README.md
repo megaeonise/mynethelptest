@@ -1,12 +1,11 @@
 # mynethelptest
-my very simple discord bot
 
+MEGAEONISE Simple js based discord bot.
 
-
-here is the link to add my bot:
+Here is the link to add my bot:
 [LINK](https://discord.com/oauth2/authorize?client_id=858413343089492009&scope=bot)
 
+Features:
 
-
-
-features: messing with friends xd
+- Sending messages
+- Changing role color
