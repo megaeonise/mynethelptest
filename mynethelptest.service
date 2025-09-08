@@ -1,0 +1,21 @@
+[Unit]
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/mynethelptest
+Restart=on-failure
+RestartSec=5s
+
+# Security hardening (optional but recommended)
+ProtectSystem=full
+; ProtectHome=read-only
+NoNewPrivileges=true
+PrivateTmp=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+
+[Install]
+WantedBy=multi-user.target
+
+# vim:ft=systemd
