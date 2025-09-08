@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+PREFIX="$HOME/.local"
+
+ln --symbolic --relative --force "mynethelptest" "$PREFIX/bin/"
+
+mkdir -p "$HOME/.config/systemd/user"
+ln --symbolic --relative --force "mynethelptest.service" "$HOME/.config/systemd/user"

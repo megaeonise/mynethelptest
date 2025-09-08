@@ -2,12 +2,11 @@
   "name": "jeff",
   "version": "1.0.0",
   "description": "megaeonise bot",
-  "main": "main.js",
   "scripts": {
-    "test": "helptest"
+    "start": "node index.js"
   },
   "author": "megaeonise",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "discord.js": "^14.22.1",
     "dotenv": "^17.2.2"
