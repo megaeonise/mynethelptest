@@ -1,19 +1,16 @@
 [Unit]
 After=network-online.target
+Requires=network-online.target
 
 [Service]
 Type=simple
-ExecStart=%h/.local/bin/mynethelptest
+ExecStart=/usr/local/bin/mynethelptest
 Restart=on-failure
 RestartSec=5s
 
-# Security hardening (optional but recommended)
-ProtectSystem=full
-; ProtectHome=read-only
-NoNewPrivileges=true
-PrivateTmp=true
-CapabilityBoundingSet=
-AmbientCapabilities=
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/usr/local/lib/mynethelptest/
 
 [Install]
 WantedBy=multi-user.target
