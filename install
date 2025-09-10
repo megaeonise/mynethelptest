@@ -1,9 +1,16 @@
 #!/bin/bash
 set -e
 
-PREFIX="$HOME/.local"
+PREFIX='/usr/local'
+NAME='mynethelptest'
 
-ln --symbolic --relative --force "mynethelptest" "$PREFIX/bin/"
+cp -r . "$PREFIX/lib/$NAME"
+chown -R root:root "$PREFIX/lib/$NAME"
+chmod +x "$PREFIX/lib/$NAME/$NAME"
+
+ln --symbolic --force "$PREFIX/lib/$NAME/$NAME" "$PREFIX/bin/"
 
 mkdir -p "$HOME/.config/systemd/user"
-ln --symbolic --relative --force "mynethelptest.service" "$HOME/.config/systemd/user"
+ln --symbolic --force "$PREFIX/lib/$NAME/$NAME.service" "/etc/systemd/system/"
+
+systemctl daemon-reload
