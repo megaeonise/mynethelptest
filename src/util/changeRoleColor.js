@@ -1,9 +1,9 @@
 const { ROLES } = require("./config");
-const { dokkanColors, wotColors, singuColors } = require("./constants");
+const { dokkanColors, wotColors } = require("./constants");
 const changeRoleColor = (rolesMap, interval) => {
-  const colorArray = [dokkanColors, wotColors, singuColors];
-  const testArray = ["dokkan", "wot", "singu"];
-  let colorIndex = [0, 0, 0];
+  const colorArray = [dokkanColors, wotColors];
+  const testArray = ["dokkan", "wot"];
+  let colorIndex = [0, 0];
   let currentIndex = 0;
   setInterval(() => {
     // console.log("am here");
